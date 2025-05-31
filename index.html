@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rock Paper Scissors Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Rock Paper Scissors Game</h1>
+    <p class="rules">
+      Rules: Rock crushes scissors, scissors cuts paper, and paper covers rock.
+    </p>
+    <p class="quote">
+      "Enjoy playing! May the best hand win! 🎮✨"
+    </p>
+
+    <div class="scoreboard">
+      <div class="score" id="player-score">Player: 0</div>
+      <div class="score" id="computer-score">Computer: 0</div>
+    </div>
+
+    <div id="result-text">Choose Rock, Paper, or Scissors to start!</div>
+
+    <div class="choices">
+      <button class="choice" id="rock">✊ Rock</button>
+      <button class="choice" id="paper">🖐️ Paper</button>
+      <button class="choice" id="scissors">✌️ Scissors</button>
+    </div>
+
+    <button id="restart-btn" style="display:none;">Restart Game</button>
+
+    <div class="history-container">
+      <h2>Game History</h2>
+      <ul id="history-list"></ul>
+    </div>
+
+    <!-- Audio files -->
+    <audio id="sound-win" src="sounds/win.mp3"></audio>
+    <audio id="sound-lose" src="sounds/lose.mp3"></audio>
+    <audio id="sound-draw" src="sounds/draw.mp3"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
